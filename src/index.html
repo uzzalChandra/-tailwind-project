@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" class="dark md-3 scroll-s">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <title>Portfolio Web</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body class="antialiase bg-white dark:bg-slate-800 dark:text-slate-400">
+    <!-- Navbar -->
+    <nav
+      class="py-5 px5 md:px-24 bg-gradient-to-r from-amber-400 via-purple-500 to-pink-500 dark:bg-slate-800 shadow md:flex md:items-center md:justify-between h-[80px] fixed w-full z-50 opacity-95"
+    >
+      <div class="flex justify-between items-center">
+        <div class="w-[0px] h-[20px] bg-slate-200 z100 absolute"></div>
+        <h1 class="text-4xl textColor">Uzzal Chandra</h1>
+        <span class="flex text-3xl cursor-pointer mx-2 md:hidden">
+          <ion-icon name="menu-outline" onclick="handleClick(this)"></ion-icon>
+          <div class="md:hidden block">
+            <button
+              id="darkIcon"
+              class="bg-gradient-to-r from-white to-slate-600 hover:from-white hover:to-slate-600 rounded-full"
+              onclick="toggleTheme()"
+            >
+              <ion-icon
+                class="w-8 h-6 block"
+                name="cloudy-night-outline"
+              ></ion-icon>
+            </button>
+          </div>
+        </span>
+      </div>
+
+      <ul
+        id="list"
+        class="md:flex md:items-center z-[-1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 px-24 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
+      >
+        <li id="closeList" class="my-6 md:my-0 mx-4">
+          <a
+            href="#"
+            class="text-[15px] text-black p-1 shadow-lg rounded-full duration-500 bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500"
+            >Home</a
+          >
+        </li>
+        <li id="closeList" class="my-6 md:my-0 mx-4">
+          <a
+            href="#"
+            class="text-[15px] p-1 shadow-lg rounded-full duration-500 bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500"
+            >Services</a
+          >
+        </li>
+        <li id="closeList" class="my-6 md:my-0 mx-4">
+          <a
+            href="#"
+            class="text-[15px] p-1 shadow-lg rounded-full duration-500 bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500"
+            >Contact</a
+          >
+        </li>
+        <li id="closeList" class="my-6 md:my-0 mx-4">
+          <a
+            href="#" 
+            class="text-[15px] p-1 shadow-lg rounded-full duration-500 bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500"
+            >About</a
+          >
+        </li>
+        <button
+          id="darkIcon"
+          class="bg-gradient-to-r from-white to-slate-600 hover:from-white hover:to-slate-600 rounded-full"
+          onclick="toggleTheme()"
+        >
+          <ion-icon
+            class="w-8 h-6 md:block hidden"
+            name="cloudy-night-outline"
+          ></ion-icon>
+        </button>
+      </ul>
+    </nav>
+
+    <!-- main section -->
+    <main>
+      <section
+        class="grid items-center grid-cols-1 grid-flow-dense md:grid-cols-2 pt-24 px-14 md:px-24 py-0 md:h-screen md:overflow-hidden"
+      >
+        <div class="order-2 md:-order-1 mt-10">
+          <h2
+            class="text-4xl md:text-7xl text-[#ffb400] font-medium p-2 scale-105"
+          >
+            Hi,
+          </h2>
+          <h4 class="text-3xl md:text-7xltext-lime-200 font-medium mt-2">
+            I am...
+          </h4>
+          <h2
+            class="text-4xl md:text-7xl font-extrabold bg-clip-text text-transparent textColor mt-2"
+          >
+            Uzzal Chandra
+          </h2>
+          <h3
+            class="text-3xl md:text-4xl text-rose-500 font-bold opacity-80 mt-5 mb-10"
+          >
+            full stack webDeveloper
+          </h3>
+        </div>
+        <div
+          class="w-48 h-52 right-0 mt-16 md:w-[375px] md:h-[375px] object-cover relative flex items-end justify-center bg-gradient-to-r from-[#EE7752] via-[#E73C7E] to-[#23D5AB] dark:bg-slate-50 rounded-full dark:opacity-70 cursor-pointer bounces animate-bgColor"
+        >
+          <img
+            class="w-44 md:w-60 md:mb-1 md:hover:h-[450px] ease-in-out hover:duration-500 delay-500 rounded-b-[80px] md:rounded-b-[70px]"
+            src="./img/20200207_153925.png"
+            alt="image"
+          />
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section class="px-24 py-32">
+        <div
+          class="flex items-center justify-center md:order-2 gap-10 md:gap-20 flex-col"
+        >
+          <h3
+            class="w-full h-full text-center text-orange-400 mb-3 font-semibold text-2xl md:text-4xl"
+          >
+            My skills
+          </h3>
+          <div
+            class="flex justify-center items-center flex-wrap gap-20 md:gap-10"
+          >
+            <div
+              class="w-28 h-28 object-cove rounded-full cursor-pointer flex items-center justify-center relative bg-white shadow-md shadow-slate-400 dark:bg-gray-500"
+              data-text=""
+            >
+              <img
+                class="w-16 hover:w-[120px] ease-in-out duration-500 delay-100"
+                src="./img/skills/javascript-39413.png"
+                alt="skills"
+              />
+            </div>
+            <div
+              class="w-28 h-28 rounded-full cursor-pointer flex items-center justify-center relative bg-white shadow-md shadow-slate-400 dark:bg-gray-500"
+              data-text=""
+            >
+              <img
+                class="w-16 hover:w-[75px] ease-in-out duration-500"
+                src="./img/skills/html5-logo-31813.png"
+              />
+            </div>
+            <div
+              class="w-28 h-28 rounded-full cursor-pointer flex items-center justify-center relative bg-white shadow-md shadow-slate-400 dark:bg-gray-500"
+              data-text=""
+            >
+              <img
+                class="w-16 hover:w-[85px] ease-in-out duration-500"
+                src="./img/skills/html5-logo-31822.png"
+                alt="skills"
+              />
+            </div>
+            <div
+              class="w-28 h-28 object-cover rounded-full cursor-pointer flex items-center justify-center relative bg-white shadow-md shadow-slate-400 dark:bg-gray-500"
+              data-text=""
+            >
+              <img
+                class="w-16 rounded-full hover:w-[90px] ease-in-out duration-500"
+                src="./img/skills/tailwindcss-1633184775.jpg"
+                alt="skills"
+              />
+            </div>
+            <div
+              class="w-28 h-28 object-cove rounded-full cursor-pointer flex items-center justify-center relative bg-white shadow-md shadow-slate-400 dark:bg-gray-500"
+              data-text=""
+            >
+              <img
+                class="w-16 hover:w-[80px] ease-in-out duration-500"
+                src="./img/skills/7423887_react_react native_icon.png"
+                alt="skills"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- about section -->
+
+      <section class="bg-slate-900 px-24 py-32">
+        <div
+          class="flex items-center justify-center md:order-2 gap-10 md:gap-20 flex-col md:flex-row"
+        >
+          <div
+            class="w-48 h-48 md:w-64 md:h-64 overflow-hidden bg-teal-400 rounded-full mx-10"
+          >
+            <img
+              class="w-full h-full object-cover opacity-90"
+              src="./img/20200207_153925.png"
+              alt="about"
+            />
+          </div>
+          <div
+            class="w-full h-full md:w-1/2 text-base md:text-lg text-center md:text-left"
+          >
+            <h3 class="text-orange-400 mb-3 font-semibold text-2xl md:text-3xl">
+              About Me
+            </h3>
+            <p class="mb-3 text-orange-400 opacity-30 mt-6">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit quia
+              magni ab repellat inventore! Rem velit officia nisi odio vel atque
+              suscipit voluptatem rerum, cupiditate aut unde mollitia,
+              blanditiis dignissimos.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        class="w-full h-full bg-gradient-to-t from-slate-400 via-lime-200 to-slate-100"
+      >
+        <div class="w-32 h-32"></div>
+      </section>
+    </main>
+
+    <script src="./index.js"></script>
+    <!-- <script>
+      function handleClick(e){
+        let list = document.querySelector('#list')
+  e.name === 'menu-outline' ? (e.name = "close", list.classList.add("top-[80px]"), list.classList.add("opacity-100"), list.classList.add("bg-white")) : (e.name = "menu-outline", list.classList.remove('top-[80px]'), list.classList.remove("opacity-100"), list.classList.remove("bg-white"))
+}
+    </script> -->
+  </body>
+</html>
